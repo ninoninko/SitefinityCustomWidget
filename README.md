@@ -7,7 +7,7 @@ To use the custom widget, you need to build the source code of Sitefinity CMS. M
 
 * A valid Sitefinity CMS license.
 * Sitefinity CMS 14.1 or later.
-* Your setup must comply with the minimum system requirements. For more information, see the System requirements for the Sitefinity CMS version you are using.
+* Your setup must comply with the minimum system requirements. For more information, see the System requirements for the Sitefinity CMS version you are using [here](https://www.progress.com/documentation/sitefinity-cms/system-requirements).
 * Visual Studio 2015 or later.
 
 ## Building the solution
