@@ -13,8 +13,9 @@ To use the custom widget, you need to build the source code of Sitefinity CMS. M
 ## Building the solution
 For the build of the solution I will assume that you are using Visual Studio 2019 but the process is similar with other versions of the IDE.
 
-1. For the setup of Sitefinity CMS you can use the following [link](https://www.progress.com/documentation/sitefinity-cms/install-sitefinity)
-2. TBA
+1. For the setup of Sitefinity CMS you can use the following [link](https://www.progress.com/documentation/sitefinity-cms/install-sitefinity).
+2. Next you will have to follow the following [link](https://www.progress.com/documentation/sitefinity-cms/131/for-developers-create-a-new-custom-widget-webforms) in order to set up a custom widget.
+3. TBA
 
 ## How does it work
 
