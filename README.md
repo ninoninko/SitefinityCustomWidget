@@ -9,3 +9,13 @@ To use the custom widget, you need to build the source code of Sitefinity CMS. M
 * Sitefinity CMS 14.1 or later.
 * Your setup must comply with the minimum system requirements. For more information, see the System requirements for the Sitefinity CMS version you are using.
 * Visual Studio 2015 or later.
+
+## Building the solution
+For the build of the solution I will assume that you are using Visual Studio 2019 but the process is similar with other versions of the IDE.
+
+1. For the setup of Sitefinity CMS you can use the following [link](https://www.progress.com/documentation/sitefinity-cms/install-sitefinity)
+2. TBA
+
+## How does it work
+
+The idea is quite straightforward. When you have set up an instance of Sitefinity and add the widget from: Content -> Custom -> SpaceX Flights on a page you have created, information about recent flight from the company will be shown for the user to pick from. After the user chooses a specific flight and clicks on it, additional information will be shown.
