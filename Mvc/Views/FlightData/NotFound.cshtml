@@ -1,0 +1,13 @@
+﻿@model SpaceXWidget.Mvc.ViewModels.LaunchViewModel
+
+<div>
+    <p class="errorMessage"> The provided ID is not in the database </p>
+
+    <p class="redirect">
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers
+@ASP.PartialExtensions.Partial(Html, "ServerContext", new Telerik.Sitefinity.Frontend.Mvc.Models.ServerContext())
+@Html.StyleSheet(Url.WidgetContent("Content/styling.css"))

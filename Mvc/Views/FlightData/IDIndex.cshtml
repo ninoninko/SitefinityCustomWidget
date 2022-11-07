@@ -1,0 +1,14 @@
+@model SitefinityWebApp.Mvc.ViewModels.LaunchViewModel
+
+<div class="jumbotron">
+    <h1>@Model.LaunchpadNumber - @Model.Name</h1>
+    <h2> is the number of the launchpad from which the rocket was fired and its name </h2>
+
+    <img src="@Model.Links.Patch.Small" alt="No rocket image today" />
+
+    <a href="@Model.Links.VideoToWatch">This is a very cool video</a>
+
+    <hr>
+    <p> This is the current news id: @Model.Id </p>
+    <hr>
+</div>

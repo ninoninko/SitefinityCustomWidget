@@ -1,0 +1,47 @@
+﻿@model SpaceXWidget.Mvc.ViewModels.LaunchViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+<body>
+    <div class="contentBlock">
+        <h1>Details</h1>
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.LaunchpadNumber)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LaunchpadNumber)
+            </dd>
+        </dl>
+
+        <img src="@Model.Links.Patch.Small" alt="No rocket image today" />
+
+        <div>
+            <iframe width="460"
+                    height="315"
+                    src="@Model.Links.VideoToWatch"
+                    frameborder="1"
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="redirect">
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+</body>
+
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers
+@ASP.PartialExtensions.Partial(Html, "ServerContext", new Telerik.Sitefinity.Frontend.Mvc.Models.ServerContext())
+@Html.StyleSheet(Url.WidgetContent("Content/styling.css"))
