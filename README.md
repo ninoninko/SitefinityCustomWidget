@@ -16,7 +16,8 @@ For the build of the solution I will assume that you are using Visual Studio 201
 1. For the setup of Sitefinity CMS you can use the following [link](https://www.progress.com/documentation/sitefinity-cms/install-sitefinity).
 2. Next you will have to pull the code from the repository and put it in the same folder as the <nameOfYourProject>.sln.
 3. Reference the widget assembly from your main one.
-4. Enjoy our SpaceX functionality!
+4. Make sure that all nuget versions are the same in the packages.config
+5. Enjoy our SpaceX functionality!
 
 ## How does it work
 
