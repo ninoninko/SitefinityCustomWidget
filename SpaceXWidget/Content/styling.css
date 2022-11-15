@@ -1,0 +1,58 @@
+﻿body {
+    background-color: lightblue;
+    display: flex;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: darkred;
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid;
+}
+
+table {
+    width: 80%;   
+}
+
+td {
+    height: 40px;
+    width: 80%;
+}
+
+.errorImage {
+    width: 800px;
+    height: 500px;
+}
+
+.mainImage {
+    width: 1824px;
+    height: 1026px;
+    background-repeat: no-repeat;
+}
+
+div.contentBlock {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+    width: 10%;
+    height: 40%;
+}
+
+a {
+    color: red;
+}
+
+p.redirect {
+    text-align: left;
+}
+
+.errorMessage {
+    text-align: left;
+}

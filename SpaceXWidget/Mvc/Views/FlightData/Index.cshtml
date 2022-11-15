@@ -1,0 +1,54 @@
+@model SpaceXWidget.Mvc.ViewModels.LaunchViewModel
+
+<main>
+    <p> UPDATED. Hello and welcome to our SpaceX API application! </p>
+
+    @using (Html.BeginForm("SearchSpecificString", "FlightData"))
+    {
+        <p>
+            Find by name: @Html.TextBox("SearchString")
+            <input type="submit" value="Search" />
+        </p>
+    }
+
+    <table>
+        <tr>
+            <th>
+                @Html.ActionLink("Sort A-Z", "OrderByFirstLetter", new { sortOrder = "true" })
+            </th>
+            <th>
+                @Html.ActionLink("Sort Z-A", "OrderByFirstLetter", new { sortOrder = "false" })
+            </th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p class="left"> Aircraft name </p>
+            </td>
+            <td>
+                <p class="right"> More information </p>
+            </td>
+        </tr>
+    </table>
+
+    @foreach (string[] property in @ViewBag.aircraftInformation)
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => property[1])
+                </td>
+                <td>
+                    @Html.ActionLink("Aircraft Details", "LaunchDetails", new { aircraftID = property[0] })
+                </td>
+            </tr>
+        </table>
+    }
+</main>
+
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers
+@ASP.PartialExtensions.Partial(Html, "ServerContext", new Telerik.Sitefinity.Frontend.Mvc.Models.ServerContext())
+@Html.StyleSheet(Url.WidgetContent("Content/styling.css"))
+
