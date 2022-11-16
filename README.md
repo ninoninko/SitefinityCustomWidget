@@ -3,7 +3,7 @@
 In the following repository I have posted a piece of code which I have made during my internship at Progress Software, Sofia. The base idea is that I am using a running instance of Sitefinity CMS in which I have created a custom widget which consumes the [SpaceX API](https://github.com/r-spacex/SpaceX-API) and shows the users specifically selected information from the API.
 
 ## Prerequisites
-To use the custom widget, you need to build the source code of Sitefinity CMS. Make sure that your development system meets the following minimal requirements:
+To use the custom widget, you will need to use Sitefinity CMS. Make sure that your development system meets the following minimal requirements:
 
 * A valid Sitefinity CMS license.
 * Sitefinity CMS 14.1 or later.
@@ -21,4 +21,4 @@ For the build of the solution I will assume that you are using Visual Studio 201
 
 ## How does it work
 
-The idea is quite straightforward. When you have set up an instance of Sitefinity and add the widget from: Content -> Custom -> SpaceX Flights on a page you have created, information about recent flight from the company will be shown for the user to pick from. After the user chooses a specific flight and clicks on it, additional information will be shown.
+The idea is quite straightforward. When you have set up an instance of Sitefinity and add the widget from: Content -> Custom -> SpaceX Flights on a page you have created, information about recent flights from the company will be shown for the user to pick from. After the user chooses a specific flight and clicks on it, additional information regarding that flight will be shown.
