@@ -19,6 +19,8 @@ For the build of the solution I will assume that you are using Visual Studio 201
 4. Make sure that all nuget versions are the same in the packages.config
 5. Enjoy our SpaceX functionality!
 
+Alternatively, you can go to "Releases", choose a version of the widget from there and follow the instructions there.
+
 ## How does it work
 
 The idea is quite straightforward. When you have set up an instance of Sitefinity and add the widget from: Content -> Custom -> SpaceX Flights on a page you have created, information about recent flights from the company will be shown for the user to pick from. After the user chooses a specific flight and clicks on it, additional information regarding that flight will be shown.
